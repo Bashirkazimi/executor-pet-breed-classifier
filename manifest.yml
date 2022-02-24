@@ -1,0 +1,5 @@
+manifest_version: 1
+name: PetBreedClassifier
+description: PetBreedClassifier takes pet images and predicts their breed using ResNet
+url: https://github.com/Bashirkazimi/executor-pet-breed-classifier
+keywords: ['pet breeds', 'resnet', 'classification', 'deep learning', 'computer vision', pytorch, CNN]
