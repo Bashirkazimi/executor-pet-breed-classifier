@@ -94,7 +94,7 @@ class PetBreedClassifier(Executor):
         model_path = cache_dir / file_name
         if not model_path.exists():
             print(f'=> download {self.pretrained_weights} to {model_path}')
-            urllib.request.urlretrieve(file_url, model_path)
+            urllib.request.urlretrieve(self.pretrained_weights, model_path)
         checkpoint = torch.load(model_path, map_location=self.device)
         self.model.load_state_dict(checkpoint)
 
